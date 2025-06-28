@@ -29,7 +29,7 @@ bibliography: paper.bib
 
 # Summary
 
-MarkerVision is an open-source MATLAB toolbox that enables vision-based pose estimation of robots using inexpensive webcams and colored fiducial markers. It provides an accessible, low-cost solution for tracking the position and orientation of mobile or articulated robots without requiring specialized motion capture systems. The toolbox offers modular functions for camera calibration, color-based marker segmentation, and 2D/3D pose computation, making it suitable for experimental robotics, education, and reproducible research workflows.
+MarkerVision is an open-source MATLAB toolbox/software that enables vision-based pose estimation of robots using inexpensive webcams and colored fiducial markers. It provides an accessible, low-cost solution for tracking the position and orientation of mobile or articulated robots without requiring specialized motion capture systems. The toolbox offers modular functions for camera calibration, color-based marker segmentation, and 2D/3D pose computation, making it suitable for experimental robotics, education, and reproducible research workflows.
 
 # Statement of need
 
