@@ -1,4 +1,4 @@
----
+_---
 title: 'MarkerVision: A MATLAB Toolbox for Vision-Based Robot Pose Estimation with Fiducial Markers'
 tags:
   - Matlab
@@ -8,6 +8,9 @@ authors:
   - name: Arun Niddish Mahendran
     affiliation: 1
     corresponding: true #
+    orcid: 0000-0000-0000-0000
+  - name: Alex Chang
+    affiliation: 2
     orcid: 0000-0000-0000-0000
   - name: Vishesh Vikas
     affiliation: 1
@@ -38,6 +41,9 @@ Localization in robotics refers to the process of determining the position and o
 
 # Figures
 
+![Marker detection pipeline.](..\figures\tracking_workflow.png){#fig:marker-detection}
+
 # Mentions
 
 # Citations
+_
