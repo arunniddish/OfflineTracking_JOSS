@@ -36,9 +36,8 @@ Localization in robotics refers to the process of determining the position and o
 
 # Mathematics
 
+# Figures
 
 # Mentions
-
-# Figures
 
 # Citations
