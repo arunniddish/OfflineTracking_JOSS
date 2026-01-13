@@ -32,7 +32,11 @@ The markers should be vibrantly visible now dominating the environment. If you a
 
 ## B. Generating Chromatic Mask (See Section III-B)
 
-For creating the color mask to segment the markers. 
+From the captured video, a frame is extracted for creating the chromatic mask.
+
+Step 1: Open the video in MATLAB and extract a frame.
+
+
 
 ## C. Parallel Processing
 
