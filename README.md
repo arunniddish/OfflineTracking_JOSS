@@ -14,21 +14,21 @@ These colored markers are usually not vibrant as they could be when seeing throu
 
 Now the **Color Thresholder** application will be open, then
 
-Step 2: Select ***Load Image***, then choose ***Acquire Image From Camera***.
+<ins>Step 2</ins>: Select ***Load Image***, then choose ***Acquire Image From Camera***.
 
 Now a live preview from the camera can be seen along with ***Camera Properties*** option.
 
-Step 3: Click on ***Camera Properties***, now it will show a UI Slider with adjustable properties like *Resolution, BacklightCompensation, Brightness, Contrast, ExposureMode, Exposure, Gain, Gamma etc.*
+<ins>Step 3</ins>: Click on ***Camera Properties***, now it will show a UI Slider with adjustable properties like *Resolution, BacklightCompensation, Brightness, Contrast, ExposureMode, Exposure, Gain, Gamma etc.*
 
-Step 4: Then choose the *Resolution* in which you want to capture video stream. This is a very important step and has to be done first before altering any other properties. Changing the *Resolution* after changing other properties will result in unexpected results as the value of the properties are dependent on the set *Resolution*.
+<ins>Step 4</ins>: Then choose the *Resolution* in which you want to capture video stream. This is a very important step and has to be done first before altering any other properties. Changing the *Resolution* after changing other properties will result in unexpected results as the value of the properties are dependent on the set *Resolution*.
 
-Step 5: Now adjust the other properties. Generally, leaving all other properties to its default value, and adjusting only *BacklightCompensation* and *Saturation* will yield expected result. On the slider, slide the *BacklightCompensation* to its lowest value and *Saturation* to its maximum value (anywhere between 90-100). 
+<ins>Step 5</ins>: Now adjust the other properties. Generally, leaving all other properties to its default value, and adjusting only *BacklightCompensation* and *Saturation* will yield expected result. On the slider, slide the *BacklightCompensation* to its lowest value and *Saturation* to its maximum value (anywhere between 90-100). 
 
 The markers should be vibrantly visible now dominating the environment. If you are not happy, adjust other properties until you are satisfied.
 
-Step 6: Record the values of all the properties. 
+<ins>Step 6</ins>: Record the values of all the properties. 
 
-Step 7: Finally, use these values to setup the camera properties while initializing the camera for capturing the video stream.
+<ins>Step 7</ins>: Finally, use these values to setup the camera properties while initializing the camera for capturing the video stream.
 
 ## B. Generating Chroma1tic Mask (See Section III-B)
 
