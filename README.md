@@ -7,7 +7,6 @@ This readme helps in navigating through the paper where more in depth details ar
 3) Parallel Processing: Initializing parallel processing using MATLAB ToolBox
 
 ## A. Initial camera setup (See Section III-A)
-![WIN_20260113_12_55_44_Pro](https://github.com/user-attachments/assets/fcdee56e-5edc-43dc-abcf-7992ca5cdf7c)
 
 These colored markers are usually not vibrant as they could be when seeing through the camera. This is due to heavy enviroment lighting which over exposures the marker. For this reason, the markers look more whitewashed. However, by strategically adjusting the camera settings, the markers can be vibrantly dominated in the scene while the environment is dulled. To do this, we use MATLAB Color Thresholder App. This app is a part of the MATLAB's **Image Processing Toolbox**.
 
