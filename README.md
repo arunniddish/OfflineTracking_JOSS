@@ -58,5 +58,10 @@ In the dialog Box choose the image *frame_read*
 
 ## C. Parallel Processing (See Section IV-B)
 
+Parallel processing is utilized when implementing Online Tracking (See Section IV-B) framework. To initiate multi-threading,
+
+<ins>Step 1</ins>: 
+
+
 
 
