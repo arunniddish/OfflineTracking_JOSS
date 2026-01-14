@@ -32,10 +32,23 @@ The markers should be vibrantly visible now dominating the environment. If you a
 
 ## B. Generating Chromatic Mask (See Section III-B)
 
-From the captured video, a frame is extracted for creating the chromatic mask.
+From the captured video, a frame is extracted for creating the chromatic mask. 
 
-Step 1: Open the video in MATLAB and extract a frame.
+<ins>Step 1</ins>: Open the video in MATLAB and extract a frame. To extract the 1st frame from the captured video,
+vread = VideoReader('Your video file name');
+frame_read = read(vread,1);
 
+<ins>Step 2</ins>: On the ***Apps*** tab, under the ***Image Processing and Computer Vision*** section, select the ***Color Thresholder*** icon.
+
+Now the **Color Thresholder** application will be open, then
+
+<ins>Step 3</ins>: Select ***Load Image***, then choose ***Load Image From Workspace***.
+
+In the dialog Box choose the image *frame_read*
+
+<ins>Step 4</ins>: From the color space options, choose ***HSV*** color space.
+
+<ins>Step 5</ins>: 
 
 
 ## C. Parallel Processing
