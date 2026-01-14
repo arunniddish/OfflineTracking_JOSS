@@ -48,7 +48,9 @@ In the dialog Box choose the image *frame_read*
 
 <ins>Step 4</ins>: From the color space options, choose ***HSV*** color space.
 
-<ins>Step 5</ins>: 
+<ins>Step 5</ins>: Adjust the sliders of H (Hue), S (Saturation), V (Value) values to segment only the marker color. Start with adjusting H (Hue) first.
+
+<ins>Step 6</ins>: To double 
 
 
 ## C. Parallel Processing
