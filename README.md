@@ -35,6 +35,7 @@ The markers should be vibrantly visible now dominating the environment. If you a
 From the captured video, a frame is extracted for creating the chromatic mask. 
 
 <ins>Step 1</ins>: Open the video in MATLAB and extract a frame. To extract the 1st frame from the captured video,
+
 vread = VideoReader('Your video file name');
 frame_read = read(vread,1);
 
@@ -55,7 +56,7 @@ In the dialog Box choose the image *frame_read*
 <ins>Step 7</ins>: Finally, select ***Export*** and choose ***Export Function***.
 
 
-## C. Parallel Processing
+## C. Parallel Processing (See Section IV-B)
 
 
 
