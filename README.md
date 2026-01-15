@@ -24,7 +24,7 @@ Now a live preview from the camera can be seen along with ***Camera Properties**
 
 <ins>Step 5</ins>: Now adjust the other properties. Generally, leaving all other properties to its default value, and adjusting only *BacklightCompensation* and *Saturation* will yield expected result. On the slider, slide the *BacklightCompensation* to its lowest value and *Saturation* to its maximum value (anywhere between 90-100). 
 
-![Alt text](images/actual_image.png)
+![Alt text](images/adjusted_image.png)
 
 The markers should be vibrantly visible now dominating the environment. If you are not happy, adjust other properties until you are satisfied.
 
