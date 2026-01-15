@@ -59,10 +59,15 @@ In the dialog Box choose the image *frame_read*
 
 ![Alt text](images/adjust_HSV.png)
 
-<ins>Step 6</ins>: Once the sliders are adjusted properly, only the chromatic signatures of marker can be seen. For better visual verification, choose ***Show Binary*** option.
+<ins>Step 6</ins>: Once the sliders are adjusted properly, only the chromatic signatures of marker can be seen. 
+
+![Alt text](images/adjusted_HSV.png)
+
+For better visual verification, choose ***Show Binary*** option.
+
+
 
 <ins>Step 7</ins>: Finally, select ***Export*** and choose ***Export Function***.
-
 
 ## C. Parallel Processing (See Section IV-B)
 
