@@ -57,6 +57,8 @@ In the dialog Box choose the image *frame_read*
 
 <ins>Step 5</ins>: Adjust the sliders of H (Hue), S (Saturation), V (Value) values to segment only the marker color. Start with adjusting H (Hue) first.
 
+![Alt text](images/adjust_HSV.png)
+
 <ins>Step 6</ins>: Once the sliders are adjusted properly, only the chromatic signatures of marker can be seen. For better visual verification, choose ***Show Binary*** option.
 
 <ins>Step 7</ins>: Finally, select ***Export*** and choose ***Export Function***.
