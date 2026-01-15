@@ -20,6 +20,8 @@ Now a live preview from the camera can be seen along with ***Camera Properties**
 
 <ins>Step 3</ins>: Click on ***Camera Properties***, now it will show a UI Slider with adjustable properties like *Resolution, BacklightCompensation, Brightness, Contrast, ExposureMode, Exposure, Gain, Gamma etc.*
 
+![Alt text](images/original_image.png)
+
 <ins>Step 4</ins>: Then choose the *Resolution* in which you want to capture video stream. This is a very important step and has to be done first before altering any other properties. Changing the *Resolution* after changing other properties will result in unexpected results as the value of the properties are dependent on the set *Resolution*.
 
 <ins>Step 5</ins>: Now adjust the other properties. Generally, leaving all other properties to its default value, and adjusting only *BacklightCompensation* and *Saturation* will yield expected result. On the slider, slide the *BacklightCompensation* to its lowest value and *Saturation* to its maximum value (anywhere between 90-100). 
