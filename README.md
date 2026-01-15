@@ -1,4 +1,4 @@
-# OfflineTracking_JOSS
+# Vision Tracking
 
 This readme helps in navigating through the paper where more in depth details are needed to setup the tracking framework. In this, we will go through the following:
 
@@ -23,6 +23,8 @@ Now a live preview from the camera can be seen along with ***Camera Properties**
 <ins>Step 4</ins>: Then choose the *Resolution* in which you want to capture video stream. This is a very important step and has to be done first before altering any other properties. Changing the *Resolution* after changing other properties will result in unexpected results as the value of the properties are dependent on the set *Resolution*.
 
 <ins>Step 5</ins>: Now adjust the other properties. Generally, leaving all other properties to its default value, and adjusting only *BacklightCompensation* and *Saturation* will yield expected result. On the slider, slide the *BacklightCompensation* to its lowest value and *Saturation* to its maximum value (anywhere between 90-100). 
+
+![Alt text](images/actual_image.png)
 
 The markers should be vibrantly visible now dominating the environment. If you are not happy, adjust other properties until you are satisfied.
 
