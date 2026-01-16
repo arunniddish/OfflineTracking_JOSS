@@ -65,7 +65,7 @@ In the dialog Box choose the image *frame_read*
 
 For better visual verification, choose ***Show Binary*** option.
 
-
+![Alt text](images/binary_HSV.png)
 
 <ins>Step 7</ins>: Finally, select ***Export*** and choose ***Export Function***.
 
