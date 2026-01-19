@@ -23,24 +23,34 @@ classdef OfflineTracking
 
         % Inputs for number of markers
         number_of_markers;
+        
         % Centroid of each markers
         centroids;
+        
         % Centroid of each marker((n-1)th frame)
         PrevPt;
+        
         % Centroid of each marker(1st frame)
         P0;
-        %
+        
+        % Centroid of each marker in the current frame (nth frame)
         CurrPt;
+        
         %
         cent;
+        
         % Overall centroid of the robot
         robot_centroid;
+        
         % Bounding box plotted over the marker
         thisBB;
+        
         % Variable holding properties of the video to be tracked
         vread;
+        
         % Total number of frames in the video
         numberOfFrames;
+        
         % Variable holding properies of animated video 
         vwrite;
 
@@ -55,7 +65,7 @@ classdef OfflineTracking
             % Syntax: obj = OfflineTracking(input1)
             %
             % Inputs:
-            %    input1 - 'params' a structure containing the parameters of...
+            %    input1 - 'params' a structure containing the parameters for initialization
             %
             % Outputs:
             %    obj - An instance of the class OfflineTracking
@@ -66,6 +76,7 @@ classdef OfflineTracking
             obj.CurrPt = [];
             obj.cent = [];
             obj.robot_centroid = [];
+            obj.theta_curr = [];  % Added now for plotting quiver
             obj.vread = params.vread;
             obj.numberOfFrames = obj.vread.NumberOfFrame;
             obj.vwrite = params.vwrite;
@@ -81,7 +92,7 @@ classdef OfflineTracking
             % Syntax: tracking_data = tracking(obj)
             %
             % Outputs:
-            %    tracking_data -
+            %    tracking_data - Centroids of each marker on all the frames
 
             for k = 1:obj.numberOfFrames
                 thisFrame = read(obj.vread,k);
@@ -101,7 +112,7 @@ classdef OfflineTracking
                     obj.thisBB(count,:) = stats(rb).BoundingBox;
                 end
 
-                obj.robot_centroid(k,:) = [mean(obj.cent(:,1)) 1080-mean(obj.cent(:,2))];   % Added ANM (Purely for plotting purpose)
+                obj.robot_centroid(k,:) = [mean(obj.cent(:,1)) 1080-mean(obj.cent(:,2))];   
 
                 zc = zeros(size(obj.cent,1),1);
                 obj.cent = [obj.cent,zc];
@@ -110,6 +121,7 @@ classdef OfflineTracking
                     obj.P0 = obj.cent;
                     obj.PrevPt = obj.cent;
                     obj.centroids = data_logging(obj,k);
+                    obj.theta_curr = 0;
                     plot(obj,thisFrame,count,k);
                 end
 
@@ -119,6 +131,7 @@ classdef OfflineTracking
                     [Rot,T] = pose_estimation(obj,obj.CurrPt,obj.PrevPt);
                     theta(k,:) = reshape(Rot,[1,9]);
                     trans(k,:) = T';
+                    obj.theta_curr = obj.theta_curr + rotm2eul(R);
 
                     [Rot,T] = pose_estimation(obj,obj.P0,obj.CurrPt);
                     theta_G(k,:) = reshape(Rot,[1,9]);
@@ -295,6 +308,15 @@ classdef OfflineTracking
             %               rectangle('Position', [obj.thisBB(ii,:)],...
             %                     'EdgeColor','y','LineWidth',2 )
             %              end
+
+            % Plot Quiver - Coordinate system of the robot
+            rot_val = pi/2;
+            u = L*cos(obj.theta_curr(1)+rot_val);
+            v = L*sin(obj.theta_curr(1)+rot_val);
+            u_bar = L*cos(obj.theta_curr(1)+rot_val+pi/2);
+            v_bar = L*sin(obj.theta_curr(1)+rot_val+pi/2);
+            quiver(centroid_x,centroid_y,u,v,'LineWidth',1.7,'Color','b','MaxHeadSize',0.7);
+            quiver(centroid_x,centroid_y,u_bar,v_bar,'LineWidth',1.7,'Color','g','MaxHeadSize',0.7);
 
             caption = sprintf('%d blobs found in frame #%d 0f %d', count, k, obj.numberOfFrames);
             title(caption, 'FontSize', 20);
