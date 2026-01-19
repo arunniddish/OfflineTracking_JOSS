@@ -73,7 +73,11 @@ For better visual verification, choose ***Show Binary*** option.
 
 Parallel processing is utilized when implementing Online Tracking (See Section IV-B) framework. To initiate multi-threading,
 
-<ins>Step 1</ins>: 
+<ins>Step 1</ins>: If not installed, download and install ***MATLAB Parallel Processing Toolbox***
+
+<ins>Step 2</ins>: Navigate to the bottom left corner in MATLAB, and click on this **icon**
+
+
 
 
 
